@@ -1,70 +1,399 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Escudo_de_la_UNSCH.png/180px-Escudo_de_la_UNSCH.png" alt="Texto alternativo de la imagen">
-       
-	<title>Biografía de Jhon Curi</title>
-	<style>
-		body {
-			background-color: #F0F0F0;
-			font-family: Arial, sans-serif;
-		}
-		
-		.header {
-			text-align: center;
-			background-color: #1E354F;
-			color: #FFFFFF;
-			padding: 50px;
-		}
-		
-		.section {
-			background-color: #C4D4E6;
-			padding: 20px;
-			margin: 20px;
-		}
-		
-		h1, h2 {
-			color: #1E354F;
-			text-align: center;
-			margin-bottom: 20px;
-		}
-		
-		img {
-			display: block;
-			margin: auto;
-			width: 200px;
-			height: auto;
-			border-radius: 50%;
-			margin-bottom: 20px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
-	<header class="header">
-		<img src="https://github.com/jhoncuria/jhoncuria.github.io/blob/master/jcuri.jpg" alt="Imagen de Jhon Curi">
-		<h1>Jhon Curi</h1>
-		<h2>Ingeniero Químico</h2>
-	</header>
-	
-	<section class="section">
-		<h2>Experiencia Profesional</h2>
-		<p>Soy un ingeniero químico con más de 18 años de experiencia en el sector minero. He trabajado en diferentes proyectos y empresas de renombre en el sector, lo que me ha permitido adquirir habilidades y conocimientos que me permiten liderar equipos de trabajo, tomar decisiones efectivas y aportar soluciones innovadoras a los desafíos que se presentan en la industria minera.</p>
-	</section>
-	
-	<section class="section">
-		<h2>Áreas de Especialización</h2>
-		<ul>
-			<li>SSOMA</li>
-			<li>Análisis de Minerales</li>
-			<li>Medio Ambiente</li>
-			<li>Data Science</li>
-		</ul>
-	</section>
-	
-	<section class="section">
-		<h2>Compromiso Profesional</h2>
-		<p>Estoy comprometido con mi profesión y con el aprendizaje continuo. Siempre estoy buscando nuevas oportunidades para crecer profesionalmente y poner en práctica mis habilidades. Me considero un profesional enfocado en resultados y en la búsqueda constante de soluciones innovadoras a los desafíos que se presentan en la industria minera.</p>
-	</section>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="https://www.linkedin.com/in/edgar-jhon-curi-araujo-a1908159/">Jhon</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/jcuria.jpg" alt="">
+            </div>
+            <h1>Jhon Curi</h1>
+            <h2>Data Scientist - Ingeniero Químico</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/edgar-jhon-curi-araujo-a1908159/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://accounts.google.com/AccountChooser/identifier?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser"><i class="fa-brands fa-google"></i></a>
+                <a href="https://github.com/jhoncuria"><i class="fa-brands fa-github"></i></a>
+                <a href="https://twitter.com/JhonCuri2"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/jhoncuria"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Jhon Curi.</span> Ingeniero Químico y Data Scientist apasionado por la ciencia de datos. A lo largo de mi carrera, he adquirido una sólida experiencia en el sector minero. Mis habilidades incluyen el modelado estadístico, la programación y el machine learning. Utilizando estas herramientas, ayudo a las empresas a optimizar sus procesos, identificar patrones y tendencias, y desarrollar modelos predictivos para impulsar la eficiencia y el crecimiento. Siempre busco soluciones innovadoras y prácticas, impulsadas por datos, que generen un impacto tangible en los resultados de las empresas. Como Data Scientist, mi objetivo es aplicar mis habilidades y experiencia para resolver desafíos complejos de datos y proporcionar soluciones basadas en evidencia que impulsen el éxito empresarial.</p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            05-05-1975
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            +51 915 393 826
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            ejcuri@gmail.com
+                        </li>
+                        <li>
+                            <strong>Website</strong>
+                            www.example.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Mala - Cañete - Lima - Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>En busca de oportunidad de trabajo</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>LIBROS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>CINE</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="https://drive.google.com/file/d/1CfDze_M-4k50__2FPpSg60LwHAYbdHwQ/view?usp=sharing" download>
+                <button>
+                    DESCARGAR CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Pandas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Numpy</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Matplotlib</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scikit-Learn</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Colaboración</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autonomía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Data Scientist</h4>
+                        <span class="casa">Bootcamp SoyHenry</span>
+                        <span class="fecha">feb 2023 - jul 2023</span>
+                        <p>En el programa de Data Science de SoyHenry, adquirí habilidades técnicas en análisis de datos, programación y machine learning, junto con habilidades blandas como comunicación efectiva, resolución de problemas, trabajo en equipo y gestión del tiempo. Preparado para aplicar estas habilidades en cualquier industria y seguir creciendo en el campo de la ciencia de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería Química</h4>
+                        <span class="casa">Universidad Nacional de San Cristobal de Huamanga</span>
+                        <span class="fecha">1995 - 2002</span>
+                        <p>Graduado en la Universidad Nacional de San Cristóbal de Huamanga, poseo una sólida formación en los procesos quimicos y su aplicación en el campo de la minería. Con habilidades técnicas en análisis químico de minerales, medio ambiente y seguridad y salud ocupacional. Preparado para enfrentar desafíos y contribuir de manera efectiva en la industria minera.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Especializacion Elaboración y Evaluación de EIA y Conflictos Sociales</h4>
+                        <span class="casa">Celaep - CIP CD-La Libertad</span>
+                        <span class="fecha">Octubre 2022 - Enero 2023</span>
+                        <p>Durante el curso, adquirí conocimientos especializados sobre la importancia de evaluar el impacto ambiental de proyectos y cómo abordar los conflictos sociales asociados. Aprendí técnicas y herramientas para elaborar evaluaciones de impacto ambiental efectivas y estrategias para gestionar los conflictos de manera constructiva. Esta especialización me ha brindado las habilidades necesarias para abordar de manera integral los desafíos ambientales y sociales en el ámbito profesional</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Jefe de Medio Ambiente</h4>
+                        <span class="casa">Sociedad Minera Reliquias SAC</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Como Jefe de Medio Ambiente, he supervisado el cumplimiento de las normativas ambientales y legales vigentes, implementando programas de monitoreo eficiente. Además, he liderado acciones de remediación y restauración de sitios contaminados, fortaleciendo la responsabilidad ambiental de la empresa y mejorando su imagen. Mi enfoque en la comunicación transparente ha generado confianza con las comunidades locales, facilitando la resolución de conflictos y construyendo relaciones sólidas. También he destacado por integrar prácticas de seguridad y salud ocupacional en las actividades relacionadas con el medio ambiente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Consultoría en Medio Ambiente</h4>
+                        <span class="casa">Sociedad Minera Reliquias SAC</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Realicé una consultoría en gestión ambiental para Sociedad Minera Reliquias SAC, asesorando en el cumplimiento de regulaciones y normativas ambientales aplicables a la industria minera. Desarrollé e implementé estrategias de gestión ambiental para minimizar impactos y mejorar el desempeño ambiental de la empresa. Además, realicé evaluaciones de riesgos ambientales y propuse medidas preventivas y correctivas. Mis logros incluyen la implementación de programas de monitoreo y control ambiental, la contribución a la mejora continua de las prácticas de gestión ambiental y la elaboración de informes técnicos en supervisiones del OEFA.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Jefe de Laboratorio Químico</h4>
+                        <span class="casa">Corporación Minera Castrovirreyna SA</span>
+                        <span class="fecha">Junio 2011 - Mayo 2017</span>
+                        <p>Como Jefe de Laboratorio Químico, seleccioné y validé métodos instrumentales, y supervisé al personal para garantizar un alto desempeño. Logré mejorar la precisión y sensibilidad de los análisis químicos, reducir los tiempos de análisis y facilitar la toma de decisiones operativas. Implementé un sistema de gestión basado en la Ley 29783 y el DS 024-2016-EM, asegurando el cumplimiento de estándares de seguridad y salud ocupacional. Estas acciones fortalecieron la calidad, confiabilidad y seguridad en el laboratorio, impulsando una cultura de prevención y mejorando la eficiencia del laboratorio químico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PROYECTOS -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/p2.png" alt="" width="300" height="200">
+                    <div class="overlay">
+                        <h3>Proyecto "Esperanza de Vida"</h3>
+                        <p>SoyHenry</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/accidentes_aereos.jpeg" alt="" width="300" height="200">
+                    <div class="overlay">
+                        <h3>Proyecto "Accidentes Aereos</h3>
+                        <p>SoyHenry</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/MLOps.webp" alt="" width="300" height="200">
+                    <div class="overlay">
+                        <h3>Proyecto "MLOps"</h3>
+                        <p>SoyHenry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button type="submit">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/mala.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Mala - Cañete
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: +51 915 393 826 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: ejcuri@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-solid fa-rss"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
-    
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2023 Jhon Curi. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
