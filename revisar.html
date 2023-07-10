@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15571.20075341305!2d-76.64267268707061!3d-12.661102216012797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105654d8b7fe71b%3A0xb18926d828a8672d!2sMala!5e0!3m2!1ses!2spe!4v1688793956821!5m2!1ses!2spe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#blog" onclick="seleccionar()">BLOG</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+ 
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="lenguajes">
+                        <h1>Lenguaje de Programacion </h1>
+                        <span>Python</span>
+                        <button><a href="img/python.png"></a></button>
+
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <button><i class=""></i></button>
+                        <span>Pandas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Numpy</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Matplotlib</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scikit-Learn</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Colaboración</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Empatía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Autonomía</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+     <!-- SECCION CURRICULUM -->
+     <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>Data Scientist</h4>
+                        <span class="casa">Bootcamp SoyHenry</span>
+                        <span class="fecha">feb 2023 - jul 2023</span>
+                        <p>En el programa de Data Science de SoyHenry, adquirí habilidades técnicas en análisis de datos, programación y machine learning, junto con habilidades blandas como comunicación efectiva, resolución de problemas, trabajo en equipo y gestión del tiempo. Preparado para aplicar estas habilidades en cualquier industria y seguir creciendo en el campo de la ciencia de datos.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ingeniería Química</h4>
+                        <span class="casa">Universidad Nacional de San Cristobal de Huamanga</span>
+                        <span class="fecha">1995 - 2002</span>
+                        <p>Graduado en la Universidad Nacional de San Cristóbal de Huamanga, poseo una sólida formación en los procesos quimicos y su aplicación en el campo de la minería. Con habilidades técnicas en análisis químico de minerales, medio ambiente y seguridad y salud ocupacional. Preparado para enfrentar desafíos y contribuir de manera efectiva en la industria minera.</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Especializacion Elaboración y Evaluación de EIA y Conflictos Sociales</h4>
+                        <span class="casa">Celaep - CIP CD-La Libertad</span>
+                        <span class="fecha">Octubre 2022 - Enero 2023</span>
+                        <p>Durante el curso, adquirí conocimientos especializados sobre la importancia de evaluar el impacto ambiental de proyectos y cómo abordar los conflictos sociales asociados. Aprendí técnicas y herramientas para elaborar evaluaciones de impacto ambiental efectivas y estrategias para gestionar los conflictos de manera constructiva. Esta especialización me ha brindado las habilidades necesarias para abordar de manera integral los desafíos ambientales y sociales en el ámbito profesional</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Jefe de Medio Ambiente</h4>
+                        <span class="casa">Sociedad Minera Reliquias SAC</span>
+                        <span class="fecha">2021 - 2021</span>
+                        <p>Como Jefe de Medio Ambiente, he supervisado el cumplimiento de las normativas ambientales y legales vigentes, implementando programas de monitoreo eficiente. Además, he liderado acciones de remediación y restauración de sitios contaminados, fortaleciendo la responsabilidad ambiental de la empresa y mejorando su imagen. Mi enfoque en la comunicación transparente ha generado confianza con las comunidades locales, facilitando la resolución de conflictos y construyendo relaciones sólidas. También he destacado por integrar prácticas de seguridad y salud ocupacional en las actividades relacionadas con el medio ambiente.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Consultoría en Medio Ambiente</h4>
+                        <span class="casa">Sociedad Minera Reliquias SAC</span>
+                        <span class="fecha">2018 - 2021</span>
+                        <p>Realicé una consultoría en gestión ambiental para Sociedad Minera Reliquias SAC, asesorando en el cumplimiento de regulaciones y normativas ambientales aplicables a la industria minera. Desarrollé e implementé estrategias de gestión ambiental para minimizar impactos y mejorar el desempeño ambiental de la empresa. Además, realicé evaluaciones de riesgos ambientales y propuse medidas preventivas y correctivas. Mis logros incluyen la implementación de programas de monitoreo y control ambiental, la contribución a la mejora continua de las prácticas de gestión ambiental y la elaboración de informes técnicos en supervisiones del OEFA.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Jefe de Laboratorio Químico</h4>
+                        <span class="casa">Corporación Minera Castrovirreyna SA</span>
+                        <span class="fecha">Junio 2011 - Mayo 2017</span>
+                        <p>Como Jefe de Laboratorio Químico, seleccioné y validé métodos instrumentales, y supervisé al personal para garantizar un alto desempeño. Logré mejorar la precisión y sensibilidad de los análisis químicos, reducir los tiempos de análisis y facilitar la toma de decisiones operativas. Implementé un sistema de gestión basado en la Ley 29783 y el DS 024-2016-EM, asegurando el cumplimiento de estándares de seguridad y salud ocupacional. Estas acciones fortalecieron la calidad, confiabilidad y seguridad en el laboratorio, impulsando una cultura de prevención y mejorando la eficiencia del laboratorio químico.</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    .contacto{
+        margin: 0;
+        min-height: 100hv;
+        background: linear-gradient(to top, rgba(51, 52, 52, 0.8), rgb(17, 18, 19)),
+        url(img/contacto.png);
+        background-repeat: no-repeat;
+        background-color: rgba(13, 13, 13, 0.9);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        color: #fff;
+        padding: 50px 0;
+    }
+    
+    .contenido-seccion{
+        max-width: 1200px;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto-seccion h2{
+        /*color: #fc8b00;*/
+        /*font-size: 48px;*/
+        font-family: 'Righteous';
+        text-align: center;
+        padding: 20px 0;
+    }
+    .fila{
+        display: flex;
+        /*grid-template-columns: 30% 70%;*/
+        gap: 10px;
+        align-items: center;
+        
+    
+    }
+    .fila .col{
+        flex: 0 0 30%;
+        width: 120%;
+        padding: 10px;
+        position: relative;
+        /*box-shadow: 0 0 30px 20px rgba(0, 252, 246, 0.5);*/
+        color: #373e44;
+        
+    }
+    .fila .col input, .contacto .col textarea{
+        display: block;
+        width: 100%;
+        padding: 18px;
+        border: none;
+        margin-bottom: 20px;
+        background-color: #373e44;
+        /*box-shadow: #fc0004;*/
+        color: #fff;
+        font-size: 18px;
+        border: #000000;
+    }
+    .col button{
+        cursor: pointer;
+        background-color: transparent;
+        border: 2px solid #fff;
+        width: fit-content;
+        display: block;
+        margin: 20px auto;
+        padding: 10px 22px;
+        font-size: 16px;
+        color: #fff;
+        position: relative;
+        z-index: 10;
+    }
+    .contacto button .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: #1CB698;
+        z-index: -1;
+        transition: 1s;
+    }
+    .contacto button:hover .overlay{
+        width: 100%;
+    }
+    
+    /*===mapa===*/
+    .col1 {
+        flex: 0 0 70%;
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .col1 iframe {
+        width: 100%; /* Ajusta el ancho al 100% del contenedor */
+        height: 100%; /* Ajusta la altura al 100% del contenedor */
+    }
+    
+    .contacto .col .info{
+        position: absolute;
+        top: 40%;
+        /*background-color: #373e44;*/
+        padding: 20px;
+        max-swidth: 350px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .contacto .col .info ul{
+        list-style: none;
+    }
+    .contacto .col .info ul li{
+        margin-bottom: 20px;
+    }
+    .contacto .col .info ul li i{
+        color: #b65a1c;
+        display: inline-block;
+        margin-right: 20px;
+    }
+    
+
+    
+    <span class="counter" data-target="95">95</span><sup>%</sup>
+
+
+    skill 5.48 pm 
+
+    <div class="box">
+                        
+        <!--========RESILIENCIA==============-->
+    <div class="text">
+        <small>Resiliencia</small>
+    </div>
+    <div class="rating">                            
+        <h2>25%</h2>
+
+        <!-- The following lines seem to be used for decorative purposes -->
+        <div class="block"></div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>
+       
+    
+    
+</div>
+
+<div class="box">
+
+    <!--========ADAPTABILIDAD==============-->
+    <div class="text">                     
+        <small>Adaptabilidad</small>
+    </div>
+    <div class="rating">                            
+        <h2>35%</h2>
+        <!-- The following lines seem to be used for decorative purposes -->
+        
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>                            
+    
+    
+</div>
+
+<div class="box">
+
+    <!--========COMUNICACION EFECTIVA==============-->                        
+    <div class="text">                        
+        <small>Comunicación Efectiva</small>
+    </div>
+    <div class="rating">                            
+        <h2>45%</h2>
+        <!-- The following lines seem to be used for decorative purposes -->
+        <div class="block"></div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>                            
+    
+    
+</div>
+<div class="box">
+    
+    <!--========OREINTACION POR RESULTADOS==============-->
+    <div class="text">
+        <small>Orientación a Resultados</small>
+    </div>
+    <div class="rating">                            
+        <h2>55%</sup></h2>
+        <!-- The following lines seem to be used for decorative purposes -->
+        <div class="block"></div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>                          
+    
+    
+</div>
+<div class="box">
+    
+    <!--========LIDERAZGO==============-->
+    <div class="text">
+        <small>Liderazgo</small>
+    </div>
+    <div class="rating">                            
+        <h2>65%</h2>
+        <!-- The following lines seem to be used for decorative purposes -->
+        <div class="block"></div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>                          
+    
+    
+</div>
+<div class="box">
+    
+    <!--========SEGURIDAD==============-->
+    <div class="text">                        
+        <small>Seguridad</small>
+    </div>
+    <div class="rating">                            
+        <h2>75%</h2>
+        <!-- The following lines seem to be used for decorative purposes -->
+        <div class="block"></div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>                            
+    
+    
+</div>
+<div class="box">
+    
+    <!--========APRENDIZAJE CONTINUO==============-->
+    <div class="text">                        
+        <small>Aprendizaje Continuo</small>
+    </div>
+    <div class="rating">                            
+        <h2>85%</h2>
+        <!-- The following lines seem to be used for decorative purposes -->
+        <div class="block"></div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>                               
+    </div>                            
+    
+    
+</div>
+
+
+
+
+<div class="skill-right">
+    <h3>Profesional Skills</h3>
+    <div class="porfessional">                    
+        <div class="box">
+            <div class="text">
+                <small>Trabajo en Equipo</small>
+            </div>
+            <div class="rating">
+                
+                                        
+                 <!-- The following lines seem to be used for decorative purposes -->
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span style="--i:21;"></span>
+                <span style="--i:22;"></span>
+                <span style="--i:23;"></span>
+                <span style="--i:24;"></span>
+                <span style="--i:25;"></span>
+                <span style="--i:26;"></span>
+                <span style="--i:27;"></span>
+                <span style="--i:28;"></span>
+                <span style="--i:29;"></span>
+                <span style="--i:30;"></span>
+                <span style="--i:31;"></span>
+                <span style="--i:32;"></span>
+                <span style="--i:33;"></span>
+                <span style="--i:34;"></span>
+                <span style="--i:35;"></span>
+                <span style="--i:36;"></span>
+                <span style="--i:37;"></span>
+                <span style="--i:38;"></span>
+                <span style="--i:39;"></span>
+                <span style="--i:40;"></span>
+                <span style="--i:41;"></span>
+                <span style="--i:42;"></span>
+                <span style="--i:43;"></span>
+                <span style="--i:44;"></span>
+                <span style="--i:45;"></span>
+                <span style="--i:46;"></span>
+                <span style="--i:47;"></span>
+                <span style="--i:48;"></span>
+                <span style="--i:49;"></span>          
+                                                                           
+                <h2>15%</h2>
+            </div>
+        </div>
+        <div class="box1">
+            <div class="circle">
+                <h2><span class="counter" data-target="90">90</span><sup>%</sup><br>HTML</h2>
+                <div class="block"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<!-- SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+<div class="contenido-seccion">
+<h2>Curriculum</h2>
+<div class="fila">
+    <div class="col izquierda">
+        <h3>Educación</h3>
+        <div class="item izq">
+            <h4>Data Scientist</h4>
+            <span class="casa">Bootcamp SoyHenry</span>
+            <span class="fecha">feb 2023 - jul 2023</span>
+            
+            <div class="conectori">
+                <div class="circuloi"></div>
+            </div>
+        </div>
+        <div class="item izq">
+            <h4>Ingeniería Química</h4>
+            <span class="casa">Universidad Nacional de San Cristobal de Huamanga</span>
+            <span class="fecha">1995 - 2002</span>
+            
+            <div class="conectori">
+                <div class="circuloi"></div>
+            </div>
+        </div>
+        <div class="item izq">
+            <h4>Especializacion Elaboración y Evaluación de EIA y Conflictos Sociales</h4>
+            <span class="casa">Celaep - CIP CD-La Libertad</span>
+            <span class="fecha">Octubre 2022 - Enero 2023</span>
+            
+            <div class="conectori">
+                <div class="circuloi"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col derecha">
+        <h3>Experiencia de trabajo</h3>
+        <div class="item der">
+            <h4>Jefe de Medio Ambiente</h4>
+            <span class="casa">Sociedad Minera Reliquias SAC</span>
+            <span class="fecha">jul 2021 - nov-2021</span>
+            
+            <div class="conectord">
+                <div class="circulod"></div>
+            </div>
+        </div>
+        <div class="item der">
+            <h4>Consultoría en Medio Ambiente</h4>
+            <span class="casa">Sociedad Minera Reliquias SAC</span>
+            <span class="fecha">jun 2018 - jun 2021</span>
+            
+            <div class="conectord">
+                <div class="circulod"></div>
+            </div>
+        </div>
+        <div class="item der">
+            <h4>Jefe de Medio Ambiente</h4>
+            <span class="casa">Corporación Minera Castrovirreyna SA</span>
+            <span class="fecha">Junio 2017 - Mayo 2018</span>
+            
+            <div class="conectord">
+                <div class="circulod"></div>
+            </div>
+        </div>
+        <div class="item der">
+            <h4>Jefe de Laboratorio Químico</h4>
+            <span class="casa">Corporación Minera Castrovirreyna SA</span>
+            <span class="fecha">Junio 2011 - Mayo 2017</span>
+            
+            <div class="conectord">
+                <div class="circulod"></div>
+            </div>
+        </div>
+        <div class="item der">
+            <h4>Jefe de Laboratorio Químico</h4>
+            <span class="casa">Castrovirreyna Compañía Minera S.A. SA</span>
+            <span class="fecha">Junio 2003 - Mayo 2017</span>
+            
+            <div class="conectord">
+                <div class="circulod"></div>
+            </div>
+        </div>
+        <div class="item der">
+            <h4>Analista Químico</h4>
+            <span class="casa">Castrovirreyna Compañía Minera S.A.</span>
+            <span class="fecha">set 2003 - Oct 2003</span>
+            
+            <div class="conectord">
+                <div class="circulod"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+SECCION CURRICULUM -->
+<section id="curriculum" class="curriculum">
+    <div class="contenido-seccion">
+        <h2>Curriculum</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>Data Scientist</h4>
+                    <span class="casa">Bootcamp SoyHenry</span>
+                    <span class="fecha">jul 2023</span>
+                    
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Ingeniería Química</h4>
+                    <span class="casa">Universidad Nacional de San Cristobal de Huamanga</span>
+                    <span class="fecha">2002</span>
+                    
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Especializacion Elaboración y Evaluación de EIA y Conflictos Sociales</h4>
+                    <span class="casa">Celaep - CIP CD-La Libertad</span>
+                    <span class="fecha">Oct. 2022 - Ene 2023</span>
+                    
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq1">
+                    <h4>Mas sobre mí</h4>
+                    <span class="casa"></span>
+                    <span class="fecha"></span>
+                    
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>Experiencia de trabajo</h3>
+                <div class="item der">
+                    <h4>Jefe de Medio Ambiente</h4>
+                    <span class="casa">Sociedad Minera Reliquias SAC</span>
+                    <span class="fecha">jul 2021 - nov-2021</span>
+                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Consultoría en Medio Ambiente</h4>
+                    <span class="casa">Sociedad Minera Reliquias SAC</span>
+                    <span class="fecha">jun 2018 - jun 2021</span>
+                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Jefe de Medio Ambiente</h4>
+                    <span class="casa">Corporación Minera Castrovirreyna SA</span>
+                    <span class="fecha">Junio 2017 - Mayo 2018</span>
+                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Jefe de Laboratorio Químico</h4>
+                    <span class="casa">Corporación Minera Castrovirreyna SA</span>
+                    <span class="fecha">Junio 2011 - Mayo 2017</span>
+                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Jefe de Laboratorio Químico</h4>
+                    <span class="casa">Castrovirreyna Compañía Minera S.A. SA</span>
+                    <span class="fecha">Junio 2003 - Mayo 2017</span>
+                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+                <div class="item der">
+                    <h4>Analista Químico</h4>
+                    <span class="casa">Castrovirreyna Compañía Minera S.A.</span>
+                    <span class="fecha">set 2003 - Oct 2003</span>
+                    
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<body>
+    <!-- SECCION SKILLS -->
+    <section id="skills" class="skills">
+      <div class="main-text">
+        <span>Technical y Profesional</span>
+        <h2>My Skills</h2>
+      </div>
+      <div class="skill-main">
+        <div class="skill-right">
+          <h3>Profesional Skills</h3>
+          <div class="professional">
+            <div class="box1">
+              <div class="circle" data-dots="90" data-percent="90"></div>
+              <div class="text">
+                <big>90%</big>
+                <small>RESILIENCIA</small>
+              </div>
+            </div>
+            <div class="box1">
+              <div class="circle" data-dots="50" data-percent="90"></div>
+              <div class="text">
+                <big>50%</big>
+                <small>ADAPTABILIDAD</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+  
+
+
+  .professional {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .box1 {
+    position: relative;
+    margin: 10px 0;
+    flex: 1 1 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .box1 .text {
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+  
+  .box1 .text big {
+    font-weight: 400;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .box1 .text small {
+    display: block;
+    font-weight: 600;
+  }
+  
+  .circle {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    position: relative;
+  }
+  
+  .circle .points {
+    width: 1px;
+    height: 10px;
+    background-color: #48ff00;
+    position: absolute;
+    border-radius: 3px;
+    transform: rotate(calc(var(--i) * var(--rot))) translateY(-45px);
+    animation: glow 0.8s linear infinite;
+  }
+  
+  .points.marked {
+    animation: glow 0.04s linear forwards;
+    animation-delay: calc(var(--i) * 0.05s);
+  }
+  
+  @keyframes glow {
+    0% {
+      background: #282927;
+      box-shadow: none;
+    }
+    50% {
+      background: #48ff00;
+      box-shadow: #00ffc8;
+    }
+    100% {
+      background: #282927;
+      box-shadow: none;
+    }
+  }
+  
+  const circles = document.querySelectorAll('.circle');
+circles.forEach(elem => {
+  const dots = parseInt(elem.getAttribute("data-dots"));
+  const marked = parseInt(elem.getAttribute("data-percent"));
+  const rotate = 360 / dots;
+  let points = "";
+
+  for (let i = 0; i < dots; i++) {
+    points += `<div class="points" style="--i:${i}; --rot:${rotate}deg"></div>`;
+  }
+
+  elem.innerHTML = points;
+  const pointsMarked = elem.querySelectorAll('.points');
+  for (let i = 0; i < marked; i++) {
+    pointsMarked[i].classList.add('marked');
+  }
+});
