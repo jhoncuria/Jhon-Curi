@@ -37,7 +37,7 @@ body{
 }
 
 .logo img {
-    width: 3rem; /* ajusta el tamaño según tus necesidades */
+    width: 6rem; /* ajusta el tamaño según tus necesidades */
     height: auto;
     
 }
@@ -859,7 +859,7 @@ img {
 .curriculum .fila{
     display: flex;
     justify-content: space-between;
-    padding: 0.625rem 0;
+    padding: 0.625rem 5rem;
 }
 
 .curriculum .fila .col{
