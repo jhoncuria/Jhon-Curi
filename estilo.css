@@ -145,14 +145,14 @@ body{
 
 .inicio .contenido-banner .contenedor-img span{
     position: absolute;
-    top: 28.7%;
-    left: 10%;
+    top: 26.5%;
+    left: 2%;
     width: 1.25rem;
     height: 0.5rem;
     background: #282929;
     border-radius: 10px;
     transform-origin: 8rem;
-    transform: scale(0.75) rotate(calc(var(--i)*(360deg /50)));
+    transform: scale(0.55) rotate(calc(var(--i)*(360deg /50)));
     animation: animateBlink 3s linear infinite;
     animation-delay: calc(var(--i)*(3s /50));
     
@@ -794,7 +794,6 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    
     position: relative;
 }
  
